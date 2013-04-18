@@ -14,6 +14,7 @@ top=1cm, bottom=1cm]{geometry}
 \usepackage{enumerate}
 \setlength{\unitlength}{1cm}
 \newcommand{\N}{\mathbb{N}}
+\newcommand{\PP}{\mathbb{P}}
 \newcommand{\A}{\mathcal{A}}
 \newcommand{\R}{\mathbb{R}}
 \parindent 0mm
@@ -33,6 +34,32 @@ Alexander Mühle\> 999999\\
 Maximilian Bachl\> 341455
 \end{tabbing}
 \section*{1. Aufgabe}
+	\begin{enumerate}
+		\item[a)] 
+			\begin{align*}
+				\Omega &:= \{(w_1,w_2) \mid w_i \in \{1,2,3,4,5,6\}, i \in \{1,2\}\} \\
+				 \PP(x) &= \frac{1}{6^2} = \frac{1}{36}
+			\end{align*}
+		\item[b)]
+			\begin{enumerate}
+				\item[i)] \begin{align*} 
+									i &= \{(w_1,w_2) \in \Omega \mid w_1 + w_2 \le 5 \}\\
+									\PP(i) &= \frac{10}{36}
+							\end{align*}
+				\item[ii)] \begin{align*} 
+									ii &= \{(w_1,w_2) \in \Omega \mid w_1\text{ mod } 2 = 1 \land w_2\text{ mod } 2 = 1 \}\\
+									\PP(i) &= \frac{1}{4}
+							\end{align*}
+				\item[iii)] \begin{align*} 
+									iii &= \{(w_1,w_2) \in \Omega \mid (w_1 + w_2) \text{ mod } 2 = 1\}\\
+									\PP(i) &= \frac{1}{2}
+							\end{align*}
+				\item[iv)] \begin{align*} 
+									i &= \{(w_1,w_2) \in \Omega \mid ( w_1 * w_2) \text{ mod } 2 = 0 \}\\
+									\PP(i) &= \frac{3}{4}
+							\end{align*}
+			\end{enumerate}
+	\end{enumerate}
 \section*{2. Aufgabe}
 \section*{3. Aufgabe}
 \section*{4. Aufgabe}
