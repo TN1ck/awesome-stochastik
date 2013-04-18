@@ -1,0 +1,17 @@
+LPAR STR=G2R LPAR STR=pol NUM=17.55 NUM=-3.33 NUM=4.31 RPAR RPAR
+
+match ('list', '(G2R (pol 17.55 -3.33 4.31))')
+
+rule_name = tokens[0].name ; LPAR
+
+rule_map.get(rule_name, ()) = LPAR STR tail PAR
+
+remaining_tokens = tokens
+
+matched_subrules = []
+
+for subrule in (LPAR STR tail RPAR):
+  matched, remaining_tokens =  macth(LPAR, G2R (pol 17.55 -3.33 4.31)))
+      return LPAR, LPAR, (G2R (pol 17.55 -3.33 4.31)
+
+  matched_subrules = RuleMatch(LPAR, G2R (pol 17.55 -3.33 4.31)))
