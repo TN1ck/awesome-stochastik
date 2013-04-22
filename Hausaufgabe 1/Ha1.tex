@@ -82,10 +82,11 @@ Maximilian Bachl\> 341455
 	$$1 - \frac{n+1}{2n - 1} $$	
 	\end{enumerate}
 \section*{4. Aufgabe}
+\begin{enumerate}
+\item[a)]
 	\textbf{Lemma:} 
 		$$\PP(A \setminus B) = \PP(A) - \PP(A \cap B)$$
-		\textbf{Beweis:} Es gilt $A = (A \setminus B) \cup (A \cap B)$. \\
-		Also gilt für die Wahrscheinlichkeit des Ereignisses $\PP(A) = \PP((A\setminus B) \cup (A \cap B))$.
+		\textbf{Beweis:} Es gilt $A = (A \setminus B) \cup (A \cap B)$. Also gilt für die Wahrscheinlichkeit des Ereignisses $\PP(A) = \PP((A\setminus B) \cup (A \cap B))$.
 		Da $A \setminus B$ und $A \cap B$ offensichtlich disjunkt sind, gilt:
 		\begin{align*}
 			\PP(A) &=  \PP((A\setminus B) \cup (A \cap B)) \\
@@ -101,6 +102,18 @@ Maximilian Bachl\> 341455
 		&= \PP(A) - \PP(A \cap B) + \PP(B) - \PP(B \cap A) \\
 		&= \PP(A) + \PP(B) - 2\PP( A \cap B)
 	\end{align*}
-	
+\item[b)]
+\begin{align*}
+	\PP(A_1 \cup A_2 \cup A_3) &= \PP(A_1) + \PP(A_2 \cup A_3) - \PP(A_1 \cap (A_2 \cup A_3)) \\
+	&=\PP(A_1) + \PP(A_2) + \PP(A_3) - \PP(A_2 \cap A_3) - \PP(A_1 \cap (A_2 \cup A_3)) \\
+	&=\PP(A_1) + \PP(A_2) + \PP(A_3) - \PP(A_2 \cap A_3) - \PP((A_1 \cap A_2) \cup (A_1 \cap A_3)) \\	
+	&=\PP(A_1) + \PP(A_2) + \PP(A_3) - \PP(A_2 \cap A_3) - \PP(A_1 \cap A_2) - \PP(A_1 \cap A_3) \\
+	&\quad + \PP((A_1 \cap A_2) \cap (A_1 \cap A_3))  \\
+	&=\PP(A_1) + \PP(A_2) + \PP(A_3) - \PP(A_2 \cap A_3) - \PP(A_1 \cap A_2) - \PP(A_1 \cap A_3) \\
+	&\quad + \PP(A_1 \cap A_2 \cap  A_3)  \\ 	
+	&= \sum^3_{i = 1} \PP(A_i)  - \PP(A_2 \cap A_3) - \PP(A_1 \cap A_2) - \PP(A_1 \cap A_3) + \PP(A_1 \cap A_2 \cap  A_3) \\
+	&= \sum^3_{i = 1} \PP(A_i)  - \sum_{1 \le i \le j \le 3, i \neq j} \PP(A_i \cap A_j) \quad+ \PP(A_1 \cap A_2 \cap  A_3)
+\end{align*}	
+\end{enumerate}
 \end{document}
 
