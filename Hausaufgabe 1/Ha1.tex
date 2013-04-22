@@ -82,5 +82,25 @@ Maximilian Bachl\> 341455
 	$$1 - \frac{n+1}{2n - 1} $$	
 	\end{enumerate}
 \section*{4. Aufgabe}
+	\textbf{Lemma:} 
+		$$\PP(A \setminus B) = \PP(A) - \PP(A \cap B)$$
+		\textbf{Beweis:} Es gilt $A = (A \setminus B) \cup (A \cap B)$. \\
+		Also gilt für die Wahrscheinlichkeit des Ereignisses $\PP(A) = \PP((A\setminus B) \cup (A \cap B))$.
+		Da $A \setminus B$ und $A \cap B$ offensichtlich disjunkt sind, gilt:
+		\begin{align*}
+			\PP(A) &=  \PP((A\setminus B) \cup (A \cap B)) \\
+			\Leftrightarrow \PP(A) &= \PP(A \setminus B) + \PP(A \cap B) \\
+			\Leftrightarrow \PP(A \setminus B) &= \PP(A) - \PP(A \cap B)
+		\end{align*}
+		
+	Nach dem Skript auf S.2 gilt:
+	\begin{align*}
+		&\text{genau eines der E. von $A$ oder $B$ tritt ein } = ( A \setminus B) \cup (B \setminus A) \\
+		&\Rightarrow \PP(( A \setminus B) \cup (B \setminus A)) \\
+		&=\PP(A\setminus B) + \PP(B \setminus A) \\
+		&= \PP(A) - \PP(A \cap B) + \PP(B) - \PP(B \cap A) \\
+		&= \PP(A) + \PP(B) - 2\PP( A \cap B)
+	\end{align*}
+	
 \end{document}
 
