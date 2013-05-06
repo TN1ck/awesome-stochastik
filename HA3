@@ -1,0 +1,113 @@
+\documentclass[10pt,a4paper,parskip=half]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathpazo}
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+\usepackage[left=1cm, right=1cm,
+top=1cm, bottom=1cm]{geometry}
+\usepackage{fullpage}
+\usepackage[german]{babel}
+\usepackage{enumerate}
+\setlength{\unitlength}{1cm}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\R}{\mathbb{R}}
+\parindent 0mm
+
+\usepackage{color}
+\usepackage{enumerate}
+
+
+
+\begin{document}
+\begin{center}
+\textsc{\Large{Stochastik für Informatiker - Hausaufgabe 3}} \\
+\end{center}
+\begin{tabbing}
+Tom Nick \hspace{1.4cm}\= 342225\\
+Alexander Mühle\> 339497\\
+Maximilian Bachl\> 341455
+\end{tabbing}
+\section*{1. Aufgabe}
+Eine Studentin im Studiengang A muss 4 Klausuren schreiben und hat eine ausreichende
+Note, wenn sie mindestens 2 davon besteht. Ein Student aus Studiengang B muss mindestens eine von drei Klausuren bestehen. Fur wen ist es einfacher eine ausreichende Note zu bekommen, wenn die Wahrscheinlichkeit jede einzelne Klausur zu bestehen gleich ist und die Klausuren unabhangig voneinander bestanden werden?
+\begin{center}
+\Omega = \{ (k_1, k_2, k_3, k_4) | k_i \in (B, \mathbb{N}) \}
+\item
+\item[-]
+\begin{description}
+Ist eine Binomialverteilung
+\end{description}
+\item[-]
+\begin{description}
+Versuche sind unabhängig
+\end{description}
+\item[-]
+\begin{description}
+Ergebnisse sind binär
+\end{description}
+\begin{center} 
+\Rightarrow \textbf{Studentin A } \boxed{\mathbb{P} (k) = \left( \begin{array}{cc} n \\ k \end{array} \right) p^k (1- p)^{n-k}} \text{ mit n = 4 und k = 2}
+\end{center}
+\item[\Rightarrow]
+\begin{description}
+\sum\limits_{i \in {\{1,2,3,4\}}}^n \mathbb{P} (i) = 1 - \left( (1-p)^n + 4p(1-p)^{n-1} \right)
+\end{description}
+\begin{center} 
+\Rightarrow \textbf{Studentin B } \boxed{\mathbb{P} (k) = \left( \begin{array}{cc} n \\ k \end{array} \right) p^k (1- p)^{n-k}} \text{ mit n = 3 und k = 1}
+\end{center}
+\item[\Rightarrow]
+\begin{description}
+\sum\limits_{i \in {\{1,2,3\}}}^n \mathbb{P} (i) = 1 - \left( (1-p)^n \right)
+\end{description}
+\begin{description}
+\\[1cm]
+1 - \left( (1-p)^4 + 4p(1-p)^{3} \right) > 1 - \left( (1-p)^3 \right)
+\end{description}
+\begin{desciption}
+Die Wahrscheinlichkeit, dass 
+\end{center}
+
+\section*{2. Aufgabe}
+Wir betrachten das Experiment, das aus dem Werfen zweier fairer Würfel besteht.
+\begin{flushleft}
+\item[i)]
+\begin{description}
+Bedingte Wahrscheinlichkeit
+\end{description}
+\end{flushleft}
+\begin{displaymath}
+  \frac{ \mathbb{P} \{(4,5),(6,5),(5,5),(5,6),(5,4)\}}{\mathbb{P} \{(1,5),(2,5),(3,5),(4,5),(5,5),(5,6),(6,5),(5,4),(5,3),(5,2),(5,1)\}} = \frac{5}{9}
+\end{displaymath}
+\newpage
+\item[ii)]
+\begin{description}
+Bedingte Wahrscheinlichkeit
+\end{description}
+\end{flushleft}
+\begin{displaymath}
+	\frac{ \mathbb{P} \{(4,5),(6,5),(5,6),(5,4)\}}{\mathbb{P} \{(1,5),(2,5),(3,5),(4,5),(5,6),(6,5),(5,4),(5,3),(5,2),(5,1)\}} = \frac{4}{8} = \frac{1}{2}
+\end{displaymath}
+\item[iii)]
+\begin{description}
+Bedingte Wahrscheinlichkeit
+\end{description}
+\end{flushleft}
+\begin{displaymath}
+	\frac{ \mathbb{P} \{(2,3)\}}{\mathbb{P} \{(1,4),(2,3),(4,1),(3,2)\}} = \frac{1}{4}
+\end{displaymath}
+
+\section*{3. Aufgabe}
+\begin{enumerate}[(i)]
+
+\end{enumerate}
+\section*{4. Aufgabe}
+\begin{enumerate}[(i)]
+
+\end{enumerate}
+
+\end{document}
