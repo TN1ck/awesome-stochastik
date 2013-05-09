@@ -36,7 +36,7 @@ Maximilian Bachl\> 341455
 Eine Studentin im Studiengang A muss 4 Klausuren schreiben und hat eine ausreichende
 Note, wenn sie mindestens 2 davon besteht. Ein Student aus Studiengang B muss mindestens eine von drei Klausuren bestehen. Fur wen ist es einfacher eine ausreichende Note zu bekommen, wenn die Wahrscheinlichkeit jede einzelne Klausur zu bestehen gleich ist und die Klausuren unabhangig voneinander bestanden werden?
 \begin{center}
-\Omega = \{ (k_1, k_2, k_3, k_4) | k_i \in (B, \mathbb{N}) \}
+$\Omega = (k_1, k_2, k_3, k_4) | k_i \in (B, \mathbb{N}) $
 \item
 \item[-]
 \begin{description}
@@ -51,26 +51,23 @@ Versuche sind unabhängig
 Ergebnisse sind binär
 \end{description}
 \begin{center} 
-\Rightarrow \textbf{Studentin A } \boxed{\mathbb{P} (k) = \left( \begin{array}{cc} n \\ k \end{array} \right) p^k (1- p)^{n-k}} \text{ mit n = 4 und k = 2}
+$\Rightarrow \textbf{Studentin A } \boxed{\mathbb{P} (k) = \left( \begin{array}{cc} n \\ k \end{array} \right) p^k (1- p)^{n-k}} \text{ mit n = 4 und k = 2}$
 \end{center}
-\item[\Rightarrow]
+\item[$\Rightarrow$]
 \begin{description}
-\sum\limits_{i \in {\{1,2,3,4\}}}^n \mathbb{P} (i) = 1 - \left( (1-p)^n + 4p(1-p)^{n-1} \right)
+$\sum\limits_{i \in {\{1,2,3,4\}}}^n \mathbb{P} (i) = 1 - \left( (1-p)^n + 4p(1-p)^{n-1} \right)$
 \end{description}
 \begin{center} 
-\Rightarrow \textbf{Studentin B } \boxed{\mathbb{P} (k) = \left( \begin{array}{cc} n \\ k \end{array} \right) p^k (1- p)^{n-k}} \text{ mit n = 3 und k = 1}
+$\Rightarrow \textbf{Studentin B } \boxed{\mathbb{P} (k) = \left( \begin{array}{cc} n \\ k \end{array} \right) p^k (1- p)^{n-k}} \text{ mit n = 3 und k = 1}$
 \end{center}
-\item[\Rightarrow]
+\item[$\Rightarrow$]
 \begin{description}
-\sum\limits_{i \in {\{1,2,3\}}}^n \mathbb{P} (i) = 1 - \left( (1-p)^n \right)
+$\sum\limits_{i \in {\{1,2,3\}}}^n \mathbb{P} (i) = 1 - \left( (1-p)^n \right)$
 \end{description}
 \begin{center}
-\\[1cm]
-1 - \left( (1-p)^4 + 4p(1-p)^{3} \right) < 1 - \left( (1-p)^3 \right) \\[1cm]
+$1 - \left( (1-p)^4 + 4p(1-p)^{3} \right) < 1 - \left( (1-p)^3 \right) $\\[1cm]
 \end{center}
-\begin{theorem}
 Es ist einfacher für die Studentin A eine ausreichende Note zu bekommen, da ihre Wahrscheinlichkeit eine zu bestehen höher ist, als die Wahrscheinlichkeit des Studenten B zwei von vier zu bestehen.
-\end{theorem}
 \end{center}
 
 \section*{2. Aufgabe}
@@ -104,26 +101,22 @@ Bedingte Wahrscheinlichkeit
 \end{displaymath}
 
 \section*{3. Aufgabe}
-Eine Urne enthält b rote und c schwarze Kugeln. Eine Kugel wird zufallig gezogen, ihre
-Farbe notiert und mit weiteren d Kugeln gleicher Farbe in die Urne zuruckgelegt.
-\begin{flushleft}
-\item[i)]
-\begin{description}
+Eine Urne enthält b rote und c schwarze Kugeln. Eine Kugel wird zufällig gezogen, ihre
+Farbe notiert und mit weiteren d Kugeln gleicher Farbe in die Urne zurückgelegt.
+\begin{enumerate}[i)]
+\item
 Bedingte Wahrscheinlichkeit
-\end{description}
-\end{flushleft}
-\begin{displaymath}
-1. Zug: rot = \frac{b}{b+c} schwarz = \frac{c}{b+c}
-\end{displaymath}
-\begin{displaymath}
-2. Zug: \frac{c}{b+c} * \frac{c+d}{b+c+d} + \frac{b}{b+c} * \frac{c}{b+c+d}
-\end{displaymath}
-\begin{flushleft}
-\item[ii)]
-\end{flushleft}
-\begin{displaymath}
+$$
+\text{1. Zug: rot} = \frac{b}{b+c} \text{ schwarz} = \frac{c}{b+c}
+$$
+$$
+\text{2. Zug: }\frac{c}{b+c} * \frac{c+d}{b+c+d} + \frac{b}{b+c} * \frac{c}{b+c+d}
+$$
+\item
+\end{enumerate}
+$$
 \frac{\frac{c}{b+c} * \frac{c+d}{b+c+d}}{\frac{c}{b+c} * \frac{c+d}{b+c+d} + \frac{b}{b+c} * \frac{c}{b+c+d}}
-\end{displaymath}
+$$
 
 \section*{4. Aufgabe}
 Vier Maschinen sind hintereinander geschaltet. Die erste funktioniert mit Wahrschein-
@@ -145,8 +138,7 @@ p_4 = p * p_3 + (1-p_3)* \frac{p}{2}
 \end{displaymath}
 \\[0.6cm]
 \begin{align}
-\Rightarrow \mathbb{P} (Mindestens \medspace 3 \medspace funktionieren) &=  p_1 * p_2 * p_3 * p_4 + (1-p_1)*p_2*P_3*p_4 + p_1*(1-p_2)*P_3*p_4 + \nonumber \\
+\Rightarrow \mathbb{P} (\text{Mindestens \medspace 3 \medspace funktionieren}) &=  p_1 * p_2 * p_3 * p_4 + (1-p_1)*p_2*P_3*p_4 + p_1*(1-p_2)*P_3*p_4 + \nonumber \\
  &\qquad {} p_1*p_2*(1-p_3)*p_4 + p_1*p_2*p_3(1-p_4) \nonumber
 \end{align}
-
 \end{document}
