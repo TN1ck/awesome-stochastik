@@ -32,6 +32,57 @@ Tom Nick \hspace{1.4cm}\= 342225\\
 Alexander Mühle\> 339497\\
 Maximilian Bachl\> 341455
 \end{tabbing}
+\section*{Aufgabe 1}
+\textbf{Karten} $:= \{2,3,4,5,6,7,8,9,10,B,D,K,A\}$ \\
+$\Omega := \{C_x, P_x, K_y, H_z \mid x \in \textbf{Karten}, y \in \textbf{Karten}\setminus\{K\}, z \in (\textbf{Karten}\setminus\{K\})\cup\{K1,K2\}\}$ \\
+\textbf{Caro Karten} $:= \{C_x \mid x \in \textbf{Karten}\}$ \\
+\textbf{Alle roten Karten} $:= \textbf{Caro Karten}   \cup \{H_x \mid x \in (\textbf{Karten}\setminus\{K\})\cup\{K1,K2\}\}$ \\
+\begin{enumerate}
+	\item $A$ und $B$ sind abhängig: \\
+			 \begin{align*}(A \cap B) &= \PP(\{H_{K1}, H_{K2}\}) = \frac{3}{52} \neq \PP(A) \cdot \PP(B) \\
+			 &=  \PP(\{H_{K1},H_{K2},C_{K},P_K\}) \cdot \PP(\textbf{Alle roten Karten}) = \frac{4}{52} \cdot \frac{27}{52} = \frac{27}{676} 			 
+			 \end{align*}
+	\item $B$ und $C$ sind abhängig: \\
+			 \begin{align*}(B \cap C) &= \PP(B) = \PP(\textbf{Caro Karten} ) \\
+			 &= \frac{13}{52} \neq \PP(A) \cdot \PP(B) \\
+			 &=   \PP(\textbf{Caro Karten}) \cdot \PP(\textbf{Alle roten Karten}) = \frac{13}{52} \cdot \frac{27}{52} 
+			 \end{align*}
+	\item $A$ und $C$ sind unabhängig: \\
+			 \begin{align*}\PP(A \cap C) &= \PP(\{C_K\} ) \\
+			 &= \frac{1}{52} = \PP(A) \cdot \PP(B) = \PP(\{H_{K1},H_{K2},C_{K},P_K\}) \cdot \PP(\textbf{Caro Karten}) = \frac{4}{52} \cdot \frac14 = \frac{1}{52}
+			 \end{align*}
+\end{enumerate}
+Da gezeigt wurde, dass $A$ und $B$ abhängig sind, $B$ und $C$ auch, aber $A$ und $C$ nicht, folgert aus der Abhängigkeit von $A$, $B$ und $B$,$C$ nicht die Abhängikeit von $A$ und $C$.
+\section*{Aufgabe 2}
+\begin{enumerate}
+	\item $A_i$ und $B_i$ abhängig?
+		\begin{itemize}
+			\item $A_1$ und $B_1$: \\
+				\begin{align*}
+					\PP(A_1 \cap B_1) &= \PP(\{(1,3),(1,4),(1,5),(1,6)\})  = \frac{4}{36} \\
+					&= \PP(A_1) \cdot \PP(B_1) =  \PP(\{(1,x) \mid x \in \{1..6\}\}) \cdot \PP(\{(x,y) \mid x,y \in \{1..6\}, y \ge 3\}) \\
+					&= \frac{1}{6} \cdot \frac{4}{6} = \frac{4}{36} \\
+					&\Rightarrow \textbf{unabhängig!}
+				\end{align*}
+			\item $A_2$ und $B_2$: \\
+				\begin{align*}
+					\PP(A_2 \cap B_2) &= \PP(\{(5,5),(6,5)\})  = \frac{2}{36} \\
+					&\neq \PP(A_2) \cdot \PP(B_2) \\
+					&= \PP(\{(x,y) \mid x,y \in \{1..6\}, x+y \ge 10\}) \cdot \PP(\{(x,5) \mid x \in \{1..6\}\}) \\
+					&= \frac{1}{6} \cdot \frac{1}{6} = \frac{1}{36} \\
+					&\Rightarrow \textbf{abhängig!}
+				\end{align*}
+			\item $A_3$ und $B_3$: \\
+				\begin{align*}
+					\PP(A_3 \cap B_3) &= \PP(\{(1, 2), (2, 1), (2, 3), (3, 2), (4, 1), (4, 3), (5, 2),(6, 1),(6, 3)\})  = \frac{9}{36} \\
+					&= \PP(A_3) \cdot \PP(B_3) \\
+					& = \PP(\{(x,y) \mid x,y \in \{1..6\}, (x + y) \text{ mod } 2 = 1\}) \cdot \PP(\{ (x,y) \mid x,y \in \{1..6\}, y \le 3\}) \\
+					&= \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4} \\
+					&\Rightarrow \textbf{unabhängig!}
+				\end{align*}
+		\end{itemize}
+\end{enumerate}
+
 \section*{Aufgabe 4}
 Es gibt 4 Möglichkeiten, die Kugeln zu ziehen, nämlich: RRR, RSR, SSR und SRR, die im nachfolgenden dargestellt werden. Man muss nur darauf achten, dass man die Kugeln, nach jedem Zug in die andere Urne legt.
 \begin{align*} 
@@ -40,5 +91,6 @@ Es gibt 4 Möglichkeiten, die Kugeln zu ziehen, nämlich: RRR, RSR, SSR und SRR,
 +&~ \frac{s_1}{r_1+s_1}\frac{s_2+1}{r_2+s_2 + 1}\frac{r_1-1}{r_1+s_1}\\
 +&~ \frac{s_1}{r_1+s_1}\frac{r_2}{r_2+s_2 + 1}\frac{r_1}{r_1+s_1}
 \end{align*}
+
 
 \end{document}
