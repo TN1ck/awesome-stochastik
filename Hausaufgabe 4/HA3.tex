@@ -35,6 +35,7 @@ Maximilian Bachl\> 341455
 \section*{Aufgabe 1}
 \textbf{Karten} $:= \{2,3,4,5,6,7,8,9,10,B,D,K,A\}$ \\
 $\Omega := \{C_x, P_x, K_y, H_z \mid x \in \textbf{Karten}, y \in \textbf{Karten}\setminus\{K\}, z \in (\textbf{Karten}\setminus\{K\})\cup\{K1,K2\}\}$ \\
+$\forall x \in \Omega. \PP(x) = \frac{1}{52}$ \\
 \textbf{Caro Karten} $:= \{C_x \mid x \in \textbf{Karten}\}$ \\
 \textbf{Alle roten Karten} $:= \textbf{Caro Karten}   \cup \{H_x \mid x \in (\textbf{Karten}\setminus\{K\})\cup\{K1,K2\}\}$ \\
 \begin{enumerate}
@@ -54,6 +55,8 @@ $\Omega := \{C_x, P_x, K_y, H_z \mid x \in \textbf{Karten}, y \in \textbf{Karten
 \end{enumerate}
 Da gezeigt wurde, dass $A$ und $B$ abhängig sind, $B$ und $C$ auch, aber $A$ und $C$ nicht, folgert aus der Abhängigkeit von $A$, $B$ und $B$,$C$ nicht die Abhängikeit von $A$ und $C$.
 \section*{Aufgabe 2}
+$\Omega := \{(w_1,w_2) \mid w_i \in \{1,2,3,4,5,6\}, i \in \{1,2\}\}$ \\
+ $\forall x \in \Omega.\PP(x) = \frac{1}{6^2} = \frac{1}{36}$
 \begin{enumerate}
 	\item $A_i$ und $B_i$ abhängig?
 		\begin{itemize}
@@ -96,7 +99,19 @@ Da gezeigt wurde, dass $A$ und $B$ abhängig sind, $B$ und $C$ auch, aber $A$ un
 			&= \PP(A^C)\cdot\PP(B^C)
 		\end{align*}
 \end{enumerate}
-
+\section*{Aufgabe 3}
+$O_1 := $ Dokument ist im ersten Ordner.
+$DO_1^C :=$ Das Dokument wurde nicht im ersten Ordner gefunden (beim ersten durchwühlen).
+$\frac{1}{x} :=$ Die Wahrscheinlichkeit, dass es in einem der Ordner ist.
+\begin{align*}
+	\PP(DO_1^C) &= \frac{2}{x} + \frac{1}{x}(1 - p_1) \\
+	\PP(O_1) &= \frac{1}{x} \\
+	\PP(DO_1^C \mid O_1) &= 1 - p_i \\
+	\PP(O_1 \mid DO_1^C) &= \frac{\PP(O_1 \cap DO_1^C)}{\PP(DO_1^C)} \\	
+	&= \frac{\PP(DO_1^C \mid O_1) \cdot \PP(O_1)}{\PP(DO_1^C)} \\
+	&= \frac{(1-p_1) \cdot \frac{1}{x}}{\frac{2}{x} + \frac{1}{x} \cdot (1-p_1)} \\
+	&= \frac{1 - p_1}{x - p_1}
+\end{align*}
 \section*{Aufgabe 4}
 Es gibt 4 Möglichkeiten, die Kugeln zu ziehen, nämlich: RRR, RSR, SSR und SRR, die im nachfolgenden dargestellt werden. Man muss nur darauf achten, dass man die Kugeln, nach jedem Zug in die andere Urne legt.
 \begin{align*} 
