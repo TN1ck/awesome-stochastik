@@ -81,6 +81,20 @@ Da gezeigt wurde, dass $A$ und $B$ abhängig sind, $B$ und $C$ auch, aber $A$ un
 					&\Rightarrow \textbf{unabhängig!}
 				\end{align*}
 		\end{itemize}
+		\item 
+		Annahme: $A$ und $B$ sind unabhängig, d.h. $\PP(A \cap B) = \PP(A) \cdot \PP(B)$
+		\begin{align*}
+			\PP(A^C \cap B) &= \PP(B \setminus (A \cap B)) \\
+			&= \PP(B) - \PP(A \cap B) \\
+			&= \PP(B) - \PP(A) \cdot \PP(B) \\
+			&= \PP(B)(1 - \PP(A)) \\
+			&= \PP(B)\cdot\PP(A^C) \\
+			\PP(A^C \cap B^C) &= \PP(A^C \setminus (A^C \cap B)) \\
+			&= \PP(A^C) - \PP(A^C \cap B) \\
+			&= \PP(A^C) - \PP(B)\cdot\PP(A^C)  \\
+			&= \PP(A^C)\cdot(1 - \PP(B)) \\
+			&= \PP(A^C)\cdot\PP(B^C)
+		\end{align*}
 \end{enumerate}
 
 \section*{Aufgabe 4}
