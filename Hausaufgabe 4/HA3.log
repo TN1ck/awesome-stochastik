@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.4)  9 MAY 2013 02:20
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.4)  12 MAY 2013 19:30
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -867,69 +867,111 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 37.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 36.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 36.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 37.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 36.
 
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 37.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 36.
 
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 37.
+(Font)              scaled to size 10.42007pt on input line 36.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 37.
+(Font)              scaled to size 7.91925pt on input line 36.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 37.
+(Font)              scaled to size 6.25204pt on input line 36.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 37.
+(Font)              scaled to size 10.42007pt on input line 36.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 37.
+(Font)              scaled to size 7.91925pt on input line 36.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 37.
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 37.
+(Font)              scaled to size 6.25204pt on input line 36.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 36.
 
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-LaTeX Font Info:    Try loading font information for U+fplmbb on input line 42.
+Underfull \hbox (badness 10000) in paragraph at lines 36--41
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+
+ []
+
+LaTeX Font Info:    Try loading font information for U+fplmbb on input line 44.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
-) [1
+)
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
-{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./HA3.
-aux) ) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 60.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omsppl.fd
+File: omsppl.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 60.
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+[1
+
+{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+ []
+
+[2] (./HA3.aux) ) 
 Here is how much of TeX's memory you used:
- 13221 strings out of 493481
- 239676 string characters out of 3140966
- 311407 words of memory out of 3000000
- 16225 multiletter control sequences out of 15000+200000
- 24720 words of font info for 77 fonts, out of 3000000 for 9000
+ 13251 strings out of 493481
+ 240141 string characters out of 3140966
+ 317408 words of memory out of 3000000
+ 16248 multiletter control sequences out of 15000+200000
+ 27754 words of font info for 84 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 65i,13n,71p,418b,193s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/loc
-al/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
-/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/loca
-l/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
-/texlive/2012/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/tex
-live/2012/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/20
-12/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on HA3.pdf (1 page, 54663 bytes).
+ 65i,13n,71p,418b,302s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.en
+c}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
+></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></us
+r/local/texlive/2012/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/loc
+al/texlive/2012/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texl
+ive/2012/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/201
+2/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on HA3.pdf (2 pages, 81010 bytes).
 PDF statistics:
- 36 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 47 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
