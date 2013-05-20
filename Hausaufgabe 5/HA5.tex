@@ -104,20 +104,15 @@ $\mathbf P(R=n-2) = \mathbb P (\{rbrb\})$
 
 \subsection*{Aufgabe 4}
 \begin{enumerate}[(i)]
-\item
-$\mathbf P(X = n) = p(n)$
-\item
-$\mathbf P(X = n) = \frac 1 {n+1}$
+\item $$P(X = n) = p(n) \cdot \left(\prod_{i=1}^{n-1} 1-p(i)\right)$$
+\item Die Formel für $P(X=n)$ ist genau gleich, man muss lediglich für $p(n)$ die richtige Formel einsetzen.
+$$P(X = n) = \frac 1 {n+1} \cdot \left(\prod_{i=1}^{n-1} 1-\frac 1 {i+1}\right)$$
 
-Für $\mathbf P(X>n) = p'(n)$, wobei wir für $p'$ folgende rekursive Definition angeben:\\
-$p'(1) = p(1)$\\
-$p'(n) = p'(n-1) \cdot p(n)$
+Es gilt:
+$$P(X \le n) = \sum_{i=1}^{n} P(X = i)$$
 
-Beispielsweise sind dies die ersten Funktionswerte von $p$ und $p'$:\\
-$p(1) = 0.5$\\
-$p'(1) = 0.5$\\
-$p(2) = 0.\overline3$\\
-$p'(2) = 0.1\overline6$
+Und nun gilt nach den Sätzen der Vorlesung:
+$$P(X > n) = 1 - P(X \le i)$$
 
 
 \end{enumerate}
