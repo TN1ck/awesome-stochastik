@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.4)  27 MAY 2013 02:01
+=======
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.6)  27 MAY 2013 21:46
+>>>>>>> c59d7cf0ec18f58b4d8a977287f133f4ccf05cd5
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -924,6 +928,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--71
 
 [1
 
+<<<<<<< HEAD
 {/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2] (./ha6.aux) ) 
 Here is how much of TeX's memory you used:
@@ -945,6 +950,33 @@ l/texlive/2012/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/te
 xlive/2012/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2
 012/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
 Output written on ha6.pdf (2 pages, 78893 bytes).
+=======
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+
+ []
+
+[2] ("D:\Code\awesome-stochastik\Hausaufgabe 6\ha6.aux") ) 
+Here is how much of TeX's memory you used:
+ 12817 strings out of 494045
+ 230715 string characters out of 3148394
+ 312607 words of memory out of 3000000
+ 15824 multiletter control sequences out of 15000+200000
+ 19558 words of font info for 59 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 65i,8n,71p,419b,242s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiK
+TeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/mathpazo/fplmbb.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/mathpazo/fplmr.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/mathpazo/fplmri.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/urw/palatino/uplri8a.pfb>
+Output written on ha6.pdf (2 pages, 85390 bytes).
+>>>>>>> c59d7cf0ec18f58b4d8a977287f133f4ccf05cd5
 PDF statistics:
  51 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream
