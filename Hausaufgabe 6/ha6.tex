@@ -4,6 +4,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{mathpazo}
+\usepackage{booktabs}
 \usepackage{tikz}
 \usetikzlibrary{patterns}
 \usepackage[left=1cm, right=1cm,
@@ -20,7 +21,7 @@ top=1cm, bottom=1cm]{geometry}
 
 \usepackage{color}
 \usepackage{enumerate}
-
+\renewcommand*\arraystretch{1.5}
 
 
 \begin{document}
@@ -58,14 +59,19 @@ $\mathbb{P}(Y = 2) = \frac{4}{16} = \frac{2}{8}$\\
 
 \item\leavevmode\vadjust{\vspace{-\baselineskip}}\newline
 Verteilung von X und Y
-\begin{tabular}{c | c c c | c}
-$X/Y$ & $0$ & $1$ & $2$ & $\mathbb{P}(X=x) $\\ \hline
-0 & $\frac{1}{16}$ & $\frac{1}{16}$ & $0$ & $\frac{1}{8}$ \\
-1 & $\frac{1}{8}$ & $\frac{3}{16}$ & $\frac{1}{16}$ & $\frac{3}{8}$ \\
-2 & $\frac{1}{16}$ & $\frac{3}{16}$ & $\frac{1}{8}$ & $\frac{3}{8}$ \\
-3 & $0$ & $\frac{1}{16}$ & $\frac{1}{16}$ & $\frac{1}{8}$ \\ \hline
-$\mathbb{P}(Y=y)$ & $\frac{2}{8}$ & $\frac{4}{8}$ & $\frac{2}{8}$ & 1
-\end{tabular}
+\begin{math}
+\begin{array}{c | c c c | c}
+\toprule
+X/Y & 0 & 1 & 2 & \mathbb{P}(X=x) \\
+\midrule
+0 & \frac{1}{16} & \frac{1}{16} & 0 & \frac{1}{8} \\
+1 & \frac{1}{8} & \frac{3}{16} & \frac{1}{16} & \frac{3}{8} \\
+2 & \frac{1}{16} & \frac{3}{16} & \frac{1}{8} & \frac{3}{8} \\
+3 & 0 & \frac{1}{16} & \frac{1}{16} & \frac{1}{8} \\ \midrule
+\mathbb{P}(Y=y) & \frac{2}{8} & \frac{4}{8} & \frac{2}{8} & 1 \\
+\bottomrule
+\end{array}
+\end{math}
 
 \item
 Nein! Da: \\\begin{center}
@@ -92,14 +98,20 @@ $\mathbb{P}(Y \geq X) = 1$
 \begin{enumerate}[(i)]
 \item
 Verteilung von X und Y
-\begin{tabular}{c | c c c | c}
-$X/Y$ & $0$ & $1$ & $2$ & $\mathbb{P}(X=x) $\\ \hline
-0 & $\frac{1}{20}$ & $0$ & $0$ & $\frac{1}{20}$ \\
-1 & $\frac{3}{20}$ & $\frac{1}{20}$ & $\frac{1}{20}$ & $\frac{1}{4}$ \\
-2 & $\frac{3}{20}$ & $\frac{2}{20}$ & $\frac{1}{20}$ & $\frac{3}{10}$ \\
-3 & $\frac{1}{20}$ & $\frac{1}{5}$ & $\frac{3}{20}$ & $\frac{2}{5}$ \\ \hline
-$\mathbb{P}(Y=y)$ & $\frac{8}{20}$ & $\frac{1}{20}$ & $\frac{5}{20}$ & 1
-\end{tabular}
+\begin{math}
+\begin{array}{c | c c c | c}
+\toprule
+X/Y & 0 & 1 & 2 & \mathbb{P}(X=x) \\ 
+\midrule
+0 & \frac{1}{20} & 0 & 0 & \frac{1}{20} \\
+1 & \frac{3}{20} & \frac{1}{20} & \frac{1}{20} & \frac{1}{4} \\
+2 & \frac{3}{20} & \frac{2}{20} & \frac{1}{20} & \frac{3}{10} \\
+3 & \frac{1}{20} & \frac{1}{5} & \frac{3}{20} & \frac{2}{5} \\
+\midrule
+\mathbb{P}(Y=y) & \frac{8}{20} & \frac{1}{20} & \frac{5}{20} & 1 \\
+\bottomrule
+\end{array}
+\end{math}
 \item
 $X(\Omega) = \{1,2,3,4\}$ \\
 $\mathbb{P}(X=1, Y=2) = \frac{1}{20}, \; \mathbb{P}(X=2, Y=1) = \frac{3}{20}$ \\
