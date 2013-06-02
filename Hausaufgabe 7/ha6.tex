@@ -42,4 +42,34 @@ $$\mathbb P(X = n) = \left(\prod_{i=1}^{n-1} 1-\frac{M}{M+N}\right) \frac{M}{M+N
 Wir ziehen die Wahrscheinlichkeiten aus der vorigen Aufgabe bis exklusive $k$ von 1 ab, weil der Text \textit{mindestens} besagt.
 $$ \mathbb P(X \ge k) = 1 - \sum_{i=1}^{k-1} P(X = i)$$
 \end{enumerate}
+\section*{Aufgabe 2}
+\begin{enumerate}[(i)]
+\item
+$X$ ist die Anzahl an Stochastik-Büchern unter 4 gezogenen Büchern.
+$$\mathbb P(X=4) = \frac{{13\choose 4} {12 \choose 0}}{{25 \choose 4}} = \frac{13}{230}$$
+\item
+$Y$ ist die Anzahl an Analysis-Büchern unter 4 gezogenen Büchern.
+$$\mathbb P(Y=4) = \frac{{12\choose 4} {13 \choose 0}}{{25 \choose 4}} = \frac{9}{230}$$
+\item
+\begin{align*}
+\mathbb P(X\ge 1) &= 1 - \mathbb P(X= 0)\\
+&= 1 - \mathbb P(Y= 4)\\
+&= 1 - \frac{13}{230}\\
+&= 1 - \frac 9 {230}\\
+&= \frac{221}{230}
+\end{align*}
+\end{enumerate}
+\section*{Aufgabe 3}
+$X$ ist die Anzahl an unbrauchbaren Birnen in einer Lieferung.\\
+$\lambda = 500 \cdot 0.001$
+\begin{align*}
+\mathbb P(X \ge 2) &= 1 - \mathbb P(X = 0) - \mathbb P(X = 1)\\
+&= 1 - \frac{0.5^0}{0!}e^{-0.5} - \frac{0.5^1}{1!}e^{-0.5}\\
+& \approx 0.09
+\end{align*}
+\section*{Aufgabe 4}
 \end{document}
+
+
+
+

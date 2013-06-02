@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.4)  2 JUN 2013 17:26
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.4)  2 JUN 2013 23:03
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -927,31 +927,38 @@ LaTeX Font Info:    Try loading font information for U+fplmbb on input line 40.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
-) [1
+)
 
-{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./ha6.
-aux) ) 
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 49.
+
+[1
+
+{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2] (./ha6.aux) ) 
 Here is how much of TeX's memory you used:
  13264 strings out of 493481
  240151 string characters out of 3140966
- 310151 words of memory out of 3000000
+ 315151 words of memory out of 3000000
  16254 multiletter control sequences out of 15000+200000
  20656 words of font info for 63 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 65i,7n,71p,418b,166s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/loc
-al/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/loca
-l/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
-texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local
-/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
-texlive/2012/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texl
-ive/2012/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2
-012/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2012/tex
-mf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on ha6.pdf (1 page, 69909 bytes).
+ 65i,8n,71p,418b,198s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.en
+c}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr
+/local/texlive/2012/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/loca
+l/texlive/2012/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/te
+xlive/2012/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2
+012/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on ha6.pdf (2 pages, 76258 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
+ 51 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
