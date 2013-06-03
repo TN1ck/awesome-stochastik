@@ -36,10 +36,10 @@ Maximilian Bachl\> 341455
 \section*{Aufgabe 1}
 \begin{enumerate}[(i)]
 \item
-Die Wahrscheinlichkeit, dass wir die ersten $n-1$ mal nicht Schwarz ziehen und am Ende eine Schwarze:
-$$\mathbb P(X = n) = \left(\prod_{i=1}^{n-1} 1-\frac{M}{M+N}\right) \frac{M}{M+N}$$
+Die Wahrscheinlichkeit, dass wir die ersten $n-1$, wobei $n \in \{0\dots N\}$ mal nicht Schwarz ziehen und am Ende eine Schwarze:
+$$\mathbb P(X = n) = \left(\prod_{i=1}^{n-1} 1-\frac{M}{M+N}\right) \frac{M}{M+N} = \left(1- \frac{M}{M+N}\right)^{n-1}\frac{M}{M+N}$$
 \item
-Wir ziehen die Wahrscheinlichkeiten aus der vorigen Aufgabe bis exklusive $k$ von 1 ab, weil der Text \textit{mindestens} besagt.
+Wir ziehen die Wahrscheinlichkeiten aus der vorigen Aufgabe bis exklusive $k$, wobei $k \in \{0\dots N\}$ von 1 ab, weil der Text \textit{mindestens} besagt.
 $$ \mathbb P(X \ge k) = 1 - \sum_{i=1}^{k-1} P(X = i)$$
 \end{enumerate}
 \section*{Aufgabe 2}
