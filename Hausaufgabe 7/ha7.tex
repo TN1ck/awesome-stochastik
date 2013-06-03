@@ -78,6 +78,16 @@ $\lambda = 500 \cdot 0.001$
 & \approx 0.09
 \end{align*}
 \section*{Aufgabe 4}
+Aus der Aufgabenstellung wissen wir:
+$$\mathbb P(X=k) = \frac{\lambda^k}{k!}\cdot e^{-\lambda}$$
+$$\mathbb P(Y=k) = \frac{\mu^k}{k!}\cdot e^{-\mu}$$
+Dann wissen wir auch:
+$$P(X+Y=n) = \sum^n_{i=0} \frac{\lambda^i}{i!}\cdot e^{-\lambda} \cdot\frac{\mu^{n-i}}{(n-i)!}\cdot e^{-\mu}$$
+Da ja nach Aufgabenstellung $X+Y=n$ und $n$ fest ist folgt aus der Definition der bedingten Wahrscheinlichkeit:
+\begin{align*}P(X=k|X+Y=n) &= \frac{\frac{\lambda^k}{k!}\cdot e^{-\lambda} \cdot\frac{\mu^{n-k}}{(n-k)!} \cdot e^{-\mu}}{\sum^n_{i=0} \frac{\lambda^i}{i!}\cdot e^{-\lambda} \cdot\frac{\mu^{n-i}}{(n-i)!}\cdot e^{-\mu}}\\
+&=\frac{\frac{\lambda^k}{k!} \cdot\frac{\mu^{n-k}}{(n-k)!}}{\sum^n_{i=0} \frac{\lambda^i}{i!} \cdot\frac{\mu^{n-i}}{(n-i)!}}\\
+&=\frac{\frac{\lambda^k\mu^{n-k}}{k!(n-k)!}}{\sum^n_{i=0} \frac{\lambda^i\mu^{n-i}}{i!(n-i)!}}\\
+\end{align*}
 \end{document}
 
 
