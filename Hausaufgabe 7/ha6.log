@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.4)  2 JUN 2013 23:03
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.4)  3 JUN 2013 00:14
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -938,10 +938,10 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 {/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2] (./ha6.aux) ) 
 Here is how much of TeX's memory you used:
- 13264 strings out of 493481
- 240151 string characters out of 3140966
- 315151 words of memory out of 3000000
- 16254 multiletter control sequences out of 15000+200000
+ 13267 strings out of 493481
+ 240197 string characters out of 3140966
+ 314149 words of memory out of 3000000
+ 16258 multiletter control sequences out of 15000+200000
  20656 words of font info for 63 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  65i,8n,71p,418b,198s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -955,7 +955,7 @@ c}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 l/texlive/2012/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/te
 xlive/2012/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2
 012/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on ha6.pdf (2 pages, 76258 bytes).
+Output written on ha6.pdf (2 pages, 77566 bytes).
 PDF statistics:
  51 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream

@@ -36,7 +36,7 @@ Maximilian Bachl\> 341455
 \section*{Aufgabe 1}
 \begin{enumerate}[(i)]
 \item
-Die Wahrscheinlichkeit, dass wir die ersten $n-1$ mal nicht Schwarz ziehen und am Ende eine Schwarze:
+Die Wahrscheinlichkeit, dass wir die ersten $n-1$ mal nicht Schwarz ziehen und am Ende eine Schwarze (die (etwas umständlich geschriebene) geom.~Verteilung):
 $$\mathbb P(X = n) = \left(\prod_{i=1}^{n-1} 1-\frac{M}{M+N}\right) \frac{M}{M+N}$$
 \item
 Wir ziehen die Wahrscheinlichkeiten aus der vorigen Aufgabe bis exklusive $k$ von 1 ab, weil der Text \textit{mindestens} besagt.
@@ -60,7 +60,16 @@ $$\mathbb P(Y=4) = \frac{{12\choose 4} {13 \choose 0}}{{25 \choose 4}} = \frac{9
 \end{align*}
 \end{enumerate}
 \section*{Aufgabe 3}
-$X$ ist die Anzahl an unbrauchbaren Birnen in einer Lieferung.\\
+$X$ ist die Anzahl an unbrauchbaren Birnen in einer Lieferung.
+
+Exakt mithilfe der Binomialverteilung.
+\begin{align*}
+\mathbb P(X \ge 2) &= 1 - \mathbb P(X = 0) - \mathbb P(X = 1)\\
+&= 1 - {500 \choose 0 } 0.001^0 0.999^500 - {500 \choose 1 } 0.001^1 0.999^499\\
+&\approx 0.09
+\end{align*}
+Und nun mithilfe der Poisson-Annäherung:
+
 $\lambda = 500 \cdot 0.001$
 \begin{align*}
 \mathbb P(X \ge 2) &= 1 - \mathbb P(X = 0) - \mathbb P(X = 1)\\
