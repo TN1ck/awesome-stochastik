@@ -87,7 +87,13 @@ Da ja nach Aufgabenstellung $X+Y=n$ und $n$ fest ist folgt aus der Definition de
 \begin{align*}P(X=k|X+Y=n) &= \frac{\frac{\lambda^k}{k!}\cdot e^{-\lambda} \cdot\frac{\mu^{n-k}}{(n-k)!} \cdot e^{-\mu}}{\sum^n_{i=0} \frac{\lambda^i}{i!}\cdot e^{-\lambda} \cdot\frac{\mu^{n-i}}{(n-i)!}\cdot e^{-\mu}}\\
 &=\frac{\frac{\lambda^k}{k!} \cdot\frac{\mu^{n-k}}{(n-k)!}}{\sum^n_{i=0} \frac{\lambda^i}{i!} \cdot\frac{\mu^{n-i}}{(n-i)!}}\\
 &=\frac{\frac{\lambda^k\mu^{n-k}}{k!(n-k)!}}{\sum^n_{i=0} \frac{\lambda^i\mu^{n-i}}{i!(n-i)!}}\\
+&=\frac{n!\frac{\lambda^k\mu^{n-k}}{k!(n-k)!}}{\sum^n_{i=0} n!\frac{\lambda^i\mu^{n-i}}{i!(n-i)!}}\\
+&=\frac{{n\choose k} \lambda^k\mu^{n-k}}{\sum^n_{i=0} {n\choose i} \lambda^i\mu^{n-i}}\\
+\intertext{mithilfe des binom.~Lehrsatzes}\\
+&=\frac{{n\choose k} \lambda^k\mu^{n-k}}{(\lambda + \mu)^n}\\
+&={n\choose k}\left(\frac{\lambda}{\lambda + \mu}\right)^k\left(\frac{\mu}{\lambda + \mu}\right)^{n-k}\\
 \end{align*}
+Somit sehen wir, dass die Binomialverteilung die Parameter $n=n$, wobei $n$ ja fest und gegeben ist, und $p=\frac \lambda {\lambda+\mu}$ hat.
 \end{document}
 
 
