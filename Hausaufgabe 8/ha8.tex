@@ -81,14 +81,18 @@ Um einen fairen Spielbetrag berechnen zu können, müssen wir zuerst die erwarte
 \end{align*}
 Also müsste der Einsatz des Spiels 1\,\euro{} betragen, damit es fair für beide Parteien ist.
 \section*{Aufgabe 4}
-Sei $n_1$ die Anzahl der Sprünge nach links und $n_2$ die nach rechts. Es gilt $n_1 + n_2 = N$.
-Mit der Wahrscheinlichkeit $p$ springt sie nach rechts und mit $p - 1 = q$ nach links.
+%Sei $n_1$ die Anzahl der Sprünge nach links und $n_2$ die nach rechts. Es gilt $n_1 + n_2 = N$.
+%Mit der Wahrscheinlichkeit $p$ springt sie nach rechts und mit $p - 1 = q$ nach links.
+%
+%Es gibt $\binom{N}{n_1}$ Möglichkeiten um exakt $n_1$ Schritte nach links und $\binom{N}{n_2}$ Möglichkeiten um $n_2$ nach rechts zu springen.
+%Somit beträgt die Wahrscheinlichkeit um eine bestimmte geordnete Sequenz von $n_1$ und $n_2$ Sprüngen ist demnach $q^{n_1}$ bzw. $p^{n_2}$.
+%
+%Dies ist also eine Binomialverteilung, somit beträgt der Erwartungswert der Position der Biene noch $N$ Sprüngen:
+%$$\E(X_n) = n_2 \cdot p - n_1 \cdot q$$
+Die Biene hat $n$-mal die Möglichkeit zu springen. Bei $p$ springt sie zu einem höheren Wert, bei $q$ zu einem kleineren.
 
-Es gibt $\binom{N}{n_1}$ Möglichkeiten um exakt $n_1$ Schritte nach links und $\binom{N}{n_2}$ Möglichkeiten um $n_2$ nach rechts zu springen.
-Somit beträgt die Wahrscheinlichkeit um eine bestimmte geordnete Sequenz von $n_1$ und $n_2$ Sprüngen ist demnach $q^{n_1}$ bzw. $p^{n_2}$.
-
-Dies ist also eine Binomialverteilung, somit beträgt der Erwartungswert der Position der Biene noch $N$ Sprüngen:
-$$\E(X_n) = n_2 \cdot p - n_1 \cdot q$$
+Dies ist eine Binomialverteilung, somit beträgt der Erwartungswert der Position der Biene noch $N$ Sprüngen:
+$$\E(X_n) = n \cdot \left(p - q\right)$$
 \end{document}
 
 
