@@ -6,6 +6,7 @@
 \usepackage{mathpazo}
 \usepackage{booktabs}
 \usepackage{tikz}
+\usepackage[gen]{eurosym}
 \usetikzlibrary{patterns}
 \usepackage[left=1cm, right=1cm,
 top=1cm, bottom=1cm]{geometry}
@@ -39,7 +40,7 @@ Maximilian Bachl\> 341455
 \item \begin{align*}
 \Omega = \{(Z), (K, Z), (K, K, Z) , (K, K, K)\} \\
 \end{align*}
-Es wird solange geworfen, bis das erste mal Zahl oder $3x$ Kopf kommt, also ist $\PP$ definiert als:
+Es wird solange geworfen, bis das erste mal Zahl oder $3\times$ Kopf kommt, also ist $\PP$ definiert als:
 \begin{align*}
 \PP(\{(Z)\}) &= \frac{1}{2} \\
 \PP(\{(K, Z)\} &= \frac{1}{4} \\
@@ -57,9 +58,9 @@ $$\E(\frac{1}{U}) = \sum_{i=1}^{6} = \frac{1}{i} \cdot \frac{1}{6} = \frac{2}{7}
 \end{enumerate}
 \section*{Aufgabe 2}
 \begin{enumerate}
-\item $X$ ist eine zum Parameter $\lambda$ Poisson-verteilte Zufallsvariable, $U \in \R$.
+\item $X$ ist eine zum Parameter $\lambda$ Poisson-verteilte Zufallsvariable, $u \in \R$.
 \begin{align*}
-\E(e^{UX}) &= \sum^{\infty}_{k=0} e^{Uk}\frac{\lambda^k}{k!} e^{-\lambda} \\
+\E(e^{uX}) &= \sum^{\infty}_{k=0} e^{uk}\frac{\lambda^k}{k!} e^{-\lambda} \\
 &= e^{-\lambda}\cdot \sum_{k=0}^{\infty} \frac{(e^u\lambda)^k}{k!} = e^{e^u\lambda - \lambda}
 \end{align*}
 \item Sei $X$ eine zum Parameter $\lambda$ Poisson-verteilte Zufallsvariable.
@@ -75,12 +76,12 @@ $$\E(\frac{1}{U}) = \sum_{i=1}^{6} = \frac{1}{i} \cdot \frac{1}{6} = \frac{2}{7}
 \section*{Aufgabe 3}
 Um einen fairen Spielbetrag berechnen zu können, müssen wir zuerst die erwarteten Gewinne/Verluste berechnen. Sei X der zu erwartene Gewinn der Spielerin.
 \begin{align*}
-\E(X) &= 2 \cdot \frac{1}{6} + 6 \cdot \frac{1}{6} + 10 \cdot \frac{1}{6}  - 2 \cdot \frac{1}{6} + 4 \cdot \frac{1}{6} + 6 \frac{1}{6} \\
+\E(X) &= 2 \cdot \frac{1}{6} + 6 \cdot \frac{1}{6} + 10 \cdot \frac{1}{6}  - \left(2 \cdot \frac{1}{6} + 4 \cdot \frac{1}{6} + 6 \cdot\frac{1}{6}\right) \\
 &= 3 - 2 = 1
 \end{align*}
-Also müsste der Einsatz des Spiels 1 euro betragen, damit es fair für beide Parteien ist.
+Also müsste der Einsatz des Spiels 1\,\euro{} betragen, damit es fair für beide Parteien ist.
 \section*{Aufgabe 4}
-Sei $n_1$ die Anzahl der Sprünge nach links und $n_2$ die nach rechts. Es gilt $n_1 + n_2 = N$
+Sei $n_1$ die Anzahl der Sprünge nach links und $n_2$ die nach rechts. Es gilt $n_1 + n_2 = N$.
 Mit der Wahrscheinlichkeit $p$ springt sie nach rechts und mit $p - 1 = q$ nach links.
 
 Es gibt $\binom{N}{n_1}$ Möglichkeiten um exakt $n_1$ Schritte nach links und $\binom{N}{n_2}$ Möglichkeiten um $n_2$ nach rechts zu springen.
