@@ -51,7 +51,7 @@ $\mathbb{E}(Y^2) = 16 \cdot (\frac{1}{4}+\frac{1}{3}) + 4 \cdot (\frac{1}{6} + \
 $\mathbb{V}(X) = \mathbb{E}(X^2) - \mathbb{E}(X)^2 = \frac{163}{12} - \frac{1681}{144} = \frac{275}{144} \approx 1.91$ \\
 $\mathbb{V}(Y) = \mathbb{E}(Y^2) - \mathbb{E}(Y)^2 = 11 - \frac{361}{36} = \frac{35}{36} \approx 0.97$ \\
 \item
-$Cov(X,Y) = \mathbb{E}[XY] - \mathbb{E}[X] * \mathbb{E}[Y] = $ \\
+$Cov(X,Y) = \mathbb{E}[XY] - \mathbb{E}[X] \cdot \mathbb{E}[Y] = 8\cdot \frac 1 4 + 20 \cdot \frac 1 6 + 12 \cdot \frac 1 6 + 4 \cdot \frac 1 6 + 10 \cdot \frac 1 4 = 10\frac 1 2 - \frac{163}{12} \cdot \frac{19}{6} = -\frac{2341}{72} \approx -23$ \\
 \item
 $\rho (X,Y) = \frac{Cov(X,Y)}{\sqrt{\mathbb{V}(X)} \cdot \sqrt{\mathbb{V}(Y)}} = -\frac{23}{5 \cdot \sqrt{385}} \approx - 0.23 $ \\
 \end{enumerate}
@@ -66,9 +66,13 @@ $\rho (X,Y) = \frac{Cov(X,Y)}{\sqrt{\mathbb{V}(X)} \cdot \sqrt{\mathbb{V}(Y)}} =
 \begin{enumerate}[(i)]
 \item
 $\mathbb{E}(X_k) = p_k$ \\
-$\mathbb{E}(S_n) = \sum\limits_{k=1}^n \mathbb{E}(p_k) $ \\ \\
+$\mathbb{E}(S_n) = \sum\limits_{k=1}^n \mathbb{E}(p_k) $
+
 \item
-$\mathbb{V}(S_n) = \sum\limits_{k=1}^n p_k(1-p_k)$
+% Nach Wikipedia Erwartungswert und Varianz gemacht.
+$\mathbb{V}(S_n) = \sum\limits_{k=1}^n \mathbb V(X_k)$
+Dies gilt, da die Variablen unabhängig und somit auch unkorelliert sind. 
+$\sum\limits_{k=1}^n \mathbb V(X_k) = \sum\limits_{k=1}^n \mathbb E (X_k^2) - (\mathbb E (X_k))^2 = \sum\limits_{k=1}^n p_k - p_k^2$
 \end{enumerate}
 
 \subsection*{Aufgabe 4}
@@ -82,6 +86,6 @@ Sei X = 1 und Y = 0
 $\rightarrow \frac{1}{2} \cdot \frac{1}{2} \neq \frac{1}{2}$
 \item
 Korrelation: \\
-$Cov(X+Y, |X-Y|) = \mathbb{E}((X+Y) \cdot |X-Y|) - \mathbb{E}(X+Y)\mathbb{E}(|X-Y|) = \frac{1}{2} - \frac{1}{2} = 0 \rightarrow unkorrelierend$ \\
+$Cov(X+Y, |X-Y|) = \mathbb{E}((X+Y) \cdot |X-Y|) - \mathbb{E}(X+Y)\mathbb{E}(|X-Y|) = \frac{1}{2} - \frac{1}{2} = 0 \rightarrow$ unkorreliert \\
 \end{enumerate}
 \end{document}
