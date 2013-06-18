@@ -16,6 +16,8 @@ top=1cm, bottom=1cm]{geometry}
 \newcommand{\PP}{\mathbb{P}}
 \newcommand{\A}{\mathcal{A}}
 \newcommand{\R}{\mathbb{R}}
+\newcommand{\V}{\mathbb{V}}
+\newcommand{\E}{\mathbb{E}}
 \parindent 0mm
 
 \usepackage{color}
@@ -59,7 +61,28 @@ $\rho (X,Y) = \frac{Cov(X,Y)}{\sqrt{\mathbb{V}(X)} \cdot \sqrt{\mathbb{V}(Y)}} =
 
 \subsection*{Aufgabe 2}
 \begin{enumerate}[(i)]
-\item
+\item Es seien $X_1, X_2$ unkorrelierte Zufallsvariablen und $a, b, c \in \R$. Durch die unkorreliertheit gilt $Cov(X_1,X_2) = 0$, die meisten anderen Schritte sind durch die Linearität von $\E$ zu erklären.
+\begin{align*}
+\V(aX_1 + bX_2 + c) &= \E[(aX_1 + bX_2 + c - \E(aX_1 + bX_2 + c))^2] \\
+&= \E[(aX_1 + bX_2 + c - \E(aX_1) - \E(bX_2) - \E(c))^2] \\
+&= \E[(aX_1 + bX_2 + c - \E(aX_1) - \E(bX_2) - c)^2] \\
+&= \E[(aX_1 + bX_2 - a\E(X_1) - b\E(X_2))^2] \\
+&= \E[(a(X_1 - \E(X_1)) + b(X_2 - \E(X_2)))^2] \\
+&= \E[a^2(X_1 - \E(X_1))^2 + b(X_2 - \E(X_2))^2 + 2ab(X_1-\E(X_1))(X_2 - \E(X_2))] \\
+&= \E[a^2(X_1 - \E(X_1))^2] + \E[b^2(X_2 - \E(X_2))] - \E[2ab(X_1-\E(X_1))(X_2 - \E(X_2))] \\
+&= a^2\V(X_1) + b^2\V(X_2) - \E[ 2ab(X_1-\E(X_1))(X_2 - \E(X_2))] \\
+&= a^2\V(X_1) + b^2\V(X_2)  + 2abCov(X_1,X_2) \\
+&= a^2\V(X_1) + b^2\V(X_2)
+\end{align*}
+\item Es seien $X_1, X_2, X_3, X_4$ unabhängige Zufallsvariablen mit $\E(X_i) = a$ und $\V(X_i) = \sigma^2$
+\begin{align*}
+\E((X_1 + X_2)X_3 + (X_1+X_4)^2) &= \E(X_1 + X_2)\E(X_3) + \E(X_1^2)+\E(X_4^2) + \E(2X_1X_4) \\
+&= \E(X_1)\E(X_3) +  \E(X_2)\E(X_3) + \E(X_1^2)+\E(X_4^2) + 2\E(X_1)\E(X_4) \\
+&= aa + aa + 2aa + \E(X_1^2)+\E(X_4^2) \\
+& =4a^2 + \V(X_1) - (\E(X_1))^2 + \V(X_4) - (\E(X_4))^2 \\
+&= 4a^2 + \sigma - a^2 + \sigma - a^2 \\
+&= 2a^2 + 2\sigma
+\end{align*}
 \end{enumerate}
 
 \subsection*{Aufgabe 3}
