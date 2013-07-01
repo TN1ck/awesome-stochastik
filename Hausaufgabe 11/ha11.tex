@@ -42,8 +42,18 @@ $$\PP(\frac14 < X < \frac13) = F(\frac13) - F(\frac14) = \frac13 - \frac14 = \fr
 \begin{align*}
 \PP(X < \frac12 \lor X > \frac23) &= \PP(X < \frac12) + \PP(\frac23 < X) \\
 &= \PP(X < \frac12) + (\PP(X < 1) - \PP(X < \frac23) \\
-&= F(\frac12) + (1 - F(\frac23)) \\
+&= F(\frac12) + (1 - F(\frac23)) \\ 
 &= \frac12 + (1 - \frac23) = \frac12 + \frac13 = \frac56
+\end{align*}
+
+\section*{Aufgabe 3}
+
+\begin{align*}
+\begin{pmatrix} p_{1,1} & \dots & p_{1,N} \\ \vdots & \ddots & \vdots \\ p_{N,1} & \dots & p_{N,N} \end{pmatrix}\begin{pmatrix} \frac 1 N \\ \vdots \\ \frac 1 N \end{pmatrix} &= \begin{pmatrix} \sum_{j=1}^{N} p_{1,j} \cdot \frac 1 N \\ \vdots \\ \sum_{j=1}^{N} p_{N,j} \cdot \frac 1 N \end{pmatrix} \\
+&= \begin{pmatrix} \frac 1 N \sum_{j=1}^{N} p_{1,j} \\ \vdots \\ \frac 1 N \sum_{j=1}^{N} p_{N,j} \end{pmatrix}\\
+&= \begin{pmatrix} \frac 1 N \cdot 1 \\ \vdots \\ \frac 1 N \cdot 1 \end{pmatrix}
+\\
+&= \begin{pmatrix} \frac 1 N \\ \vdots \\ \frac 1 N \end{pmatrix}
 \end{align*}
 
 \end{enumerate}
