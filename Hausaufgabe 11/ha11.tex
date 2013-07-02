@@ -42,9 +42,73 @@ $$\PP(\frac14 < X < \frac13) = F(\frac13) - F(\frac14) = \frac13 - \frac14 = \fr
 \begin{align*}
 \PP(X < \frac12 \lor X > \frac23) &= \PP(X < \frac12) + \PP(\frac23 < X) \\
 &= \PP(X < \frac12) + (\PP(X < 1) - \PP(X < \frac23) \\
-&= F(\frac12) + (1 - F(\frac23)) \\ 
+&= F(\frac12) + (1 - F(\frac23)) \\
 &= \frac12 + (1 - \frac23) = \frac12 + \frac13 = \frac56
 \end{align*}
+\item
+$p \in (0,1)$ mit der Zufallsvariable $X$, wobei $\PP(X = 1) = p)$ und $\PP(X = 0) = 1 -p$. Somit ist $X$ \textit{fast} Bernoulli verteilt, womit gilt:
+\begin{align*}
+F_X(t) =
+\begin{cases}
+0 & \text{falls } t < 0 \\
+1 - p &\text{falls } t \in [0,1] \\
+1 &\text{falls } t \ge 1
+\end{cases}
+\end{align*}
+\item
+$n \in \N$, $X$ ist diskret verteilt auf der Menge $\{\frac1n, \frac2n, \dots ,1 \}$.
+\begin{align*}
+F_X(t) = \frac1n
+\end{align*}
+\end{enumerate}
+
+\section*{Aufgabe 2}
+Die Invariante der Uebergangsmatrix $P$ ist der Eigenvektor von $P$ zum Eigenwert $1$. Wir benutzen die \textit{Standardalgorhithmus} zum berechnen des Eigenwerts.
+\begin{enumerate}
+\item Da wir den Eigenvektor zum Eigenwert 1 berechen, muessen wir die Einheitsmatrix vom $P$ subtrahieren.
+\begin{align*}
+P = \left(\begin{matrix}
+0.5 & 0.4 & 0.1 \\
+0.3 & 0.4 & 0.3 \\
+0.2 & 0.3 & 0.5
+\end{matrix}\right) - I^3 =
+\left(\begin{matrix}
+-0.5 & 0.4 & 0.1 \\
+0.3 & -0.6 & 0.3 \\
+0.2 & 0.3 & -0.5
+\end{matrix}\right)
+\end{align*}
+\item Die Matrix in ZSF bringen.
+\begin{align*}
+\left(\begin{matrix}
+-0.5 & 0.4 & 0.1 \\
+0.3 & -0.6 & 0.3 \\
+0.2 & 0.3 & -0.5
+\end{matrix}\right) \Rightarrow
+\left(\begin{matrix}
+1 & 0 & -1 \\
+0 & 1 & -1 \\
+0 & 0 & 0
+\end{matrix}\right)
+\end{align*}
+Dies ergibt das LGS:
+\begin{align*}
+\pi(1) - \pi(3) = 0 \Leftrightarrow \pi(1) = \pi(3) \\
+\pi(2) - \pi(3) = 0 \Leftrightarrow \pi(2) = \pi(3) \\
+\pi(1) + \pi(2) + \pi(3) = 1 \\
+\end{align*}
+Daraus folgt:
+$$\frac13 = \pi(1) = \pi(2) = \pi(3)$$
+Somit ist die Invariante Verteilung $$\left(\frac13 ~ \frac13 ~ \frac13\right)$$
+Probe:
+$$\left(\frac13 ~ \frac13 ~ \frac13\right) \cdot \left(\begin{matrix}
+0.5 & 0.4 & 0.1 \\
+0.3 & 0.4 & 0.3 \\
+0.2 & 0.3 & 0.5
+\end{matrix}\right) = \left(\frac13 ~ \frac{11}{30} ~ \frac{3}{10}\right)$$
+Da stimmt etwas nicht, ich habe die Rechnung per Hand und mit Wolfram-Alpha überprüft.
+Es gibt also keine Invariante :(.
+\end{enumerate}
 
 \section*{Aufgabe 3}
 
@@ -55,8 +119,36 @@ $$\PP(\frac14 < X < \frac13) = F(\frac13) - F(\frac14) = \frac13 - \frac14 = \fr
 \\
 &= \begin{pmatrix} \frac 1 N \\ \vdots \\ \frac 1 N \end{pmatrix}
 \end{align*}
-
+\section*{Aufgabe 4}
+\begin{enumerate}
+\item
+\begin{center}
+    \begin{tikzpicture}[auto,bend angle=30,node distance=3cm]
+      % Zustaende
+      \node[state, initial text=,initial where=left, accepting]  (q0)  {$q_0$};
+      \node[state]                                                (q1) [above left of=q0] {$q_1$};
+      \node[state]                                                (q2) [left of=q1] {$q_2$};
+      \node[state]                                                (q3) [below left of=q0] {$q_3$};
+      \node[state]                                     (q4) [below right  of=q0] {$q_4$};
+      % Pacman Kugeln
+      % Transitionen    
+      \path[->, swap] (q0) edge node {$\mathsf{a,b}$} (q1);
+      \path[->, bend right, swap] (q1) edge node {$\mathsf{a,b}$} (q2);
+      \path[->, bend right, swap] (q2) edge node {$\mathsf{c}$} (q3);
+      \path[->, bend right, swap] (q3) edge node {$\mathsf{a,b}$} (q4);
+      \path[->, swap] (q4) edge node {$\mathsf{a,b}$} (q0);
+      \path[->, loop right] (q1) edge node {$\mathsf{a}$} (q1);
+    \end{tikzpicture}
+  \end{center}
+$$P = \left(\begin{matrix}
+0 & \frac12 & 0 & 0 & \frac12 & \\
+\frac12 & 0 & \frac12 & 0 & 0 & \\
+0 & \frac12 & 0 & \frac12 & 0 & \\
+0 & 0 & \frac12 & 0 & \frac12 & \\
+\frac12 & 0 & 0 & \frac12 & 0
+\end{matrix}\right)$$
 \end{enumerate}
+
 
 \end{document}
 
