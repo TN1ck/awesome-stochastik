@@ -121,31 +121,41 @@ Es gibt also keine Invariante :(.
 \end{align*}
 \section*{Aufgabe 4}
 \begin{enumerate}
+\item .
+\vspace{5cm}
 \item
-\begin{center}
-    \begin{tikzpicture}[auto,bend angle=30,node distance=3cm]
-      % Zustaende
-      \node[state, initial text=,initial where=left, accepting]  (q0)  {$q_0$};
-      \node[state]                                                (q1) [above left of=q0] {$q_1$};
-      \node[state]                                                (q2) [left of=q1] {$q_2$};
-      \node[state]                                                (q3) [below left of=q0] {$q_3$};
-      \node[state]                                     (q4) [below right  of=q0] {$q_4$};
-      % Pacman Kugeln
-      % Transitionen    
-      \path[->, swap] (q0) edge node {$\mathsf{a,b}$} (q1);
-      \path[->, bend right, swap] (q1) edge node {$\mathsf{a,b}$} (q2);
-      \path[->, bend right, swap] (q2) edge node {$\mathsf{c}$} (q3);
-      \path[->, bend right, swap] (q3) edge node {$\mathsf{a,b}$} (q4);
-      \path[->, swap] (q4) edge node {$\mathsf{a,b}$} (q0);
-      \path[->, loop right] (q1) edge node {$\mathsf{a}$} (q1);
-    \end{tikzpicture}
-  \end{center}
 $$P = \left(\begin{matrix}
 0 & \frac12 & 0 & 0 & \frac12 & \\
 \frac12 & 0 & \frac12 & 0 & 0 & \\
 0 & \frac12 & 0 & \frac12 & 0 & \\
 0 & 0 & \frac12 & 0 & \frac12 & \\
 \frac12 & 0 & 0 & \frac12 & 0
+\end{matrix}\right)$$
+\item
+$$P^2 = \frac14\left(\begin{matrix}
+2 & 0 & 1 & 1 & 0 & \\
+0 & 2 & 0 & 1 & 1 & \\
+1 & 0 & 2 & 0 & 1 & \\
+1 & 1 & 0 & 2 & 0 & \\
+0 & 1 & 1 & 0 & 1
+\end{matrix}\right)$$
+Wir besitzen hier genau den in Aufgabe 3 beschriebenen Fall, da $N=5$ ist die Invariante Verteilung gegeben durch:
+$$\left(\frac15~\frac15~\frac15~\frac15~\frac15\right)$$
+Probe:
+$$P = \left(\frac15~\frac15~\frac15~\frac15~\frac15\right)\cdot\left(\begin{matrix}
+0 & \frac12 & 0 & 0 & \frac12 & \\
+\frac12 & 0 & \frac12 & 0 & 0 & \\
+0 & \frac12 & 0 & \frac12 & 0 & \\
+0 & 0 & \frac12 & 0 & \frac12 & \\
+\frac12 & 0 & 0 & \frac12 & 0
+\end{matrix}\right) = \left(\frac15~\frac15~\frac15~\frac15~\frac15\right)$$
+\item Gar keine, da:
+$$P^5 = \frac1{32}\left(\begin{matrix}
+2 & 10 & 5 & 5 & 10 & \\
+10 & 2 & 10 & 5 & 5 & \\
+5 & 10 & 2 & 10 & 5 & \\
+5 & 5 & 10 & 2 & 10 & \\
+10 & 5 & 5 & 10 & 2
 \end{matrix}\right)$$
 \end{enumerate}
 
